@@ -17,7 +17,11 @@ const App = (props) => {
         return <PostItem post={post} key={post.title} />;
       })}
       <h2 className={styles.heading}>Works</h2>
-      <div className={styles.WorkItems}></div>
+      <div className={styles.WorkItems}>
+        {props.works.map((work) => {
+          return <WorkItem work={work} key={work.name}/>;
+        })}
+      </div>
     </Layout>
   );
 };

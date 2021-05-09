@@ -23,7 +23,25 @@ const posts = [
   },
 ];
 
+const works = [
+  {
+    title: "『執筆DAYS』 リニューアル",
+    roles: ["WordPress", "React"],
+    imageUrl: "/work.png",
+  },
+  {
+    title: "『締め切りTU=RYDAY』公式サイト",
+    roles: ["React", "Gatsby", "Figma"],
+    imageUrl: "/work.png",
+  },
+  {
+    title: "『ブルーバードコミックス』サービスサイト",
+    roles: ["React", "Next.js"],
+    imageUrl: "/work.png",
+  },
+];
+
 ReactDOM.render(
-  <App posts={posts} />,
+  <App posts={posts} works={works} />,
   document.getElementById("root")
 );
